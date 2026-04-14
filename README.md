@@ -8,6 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/status-actively_maintained-success?style=for-the-badge" />
   <img src="https://img.shields.io/badge/audience-recruiters_&_hiring_managers-6E56CF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge" />
 </p>
 
 ---
@@ -23,27 +24,33 @@ Everything here is either redacted from real programs I've run or built as templ
 ## 📂 Contents
 
 ### 📝 Product & strategy
-- **[PRDs](./prds/)** — Product requirement docs with clear problem framing, user segments, success metrics, and scoping decisions
-- **[One-pagers](./one-pagers/)** — Pre-PRD narrative docs used for alignment before writing user stories
-- **[Pricing & packaging](./pricing/)** — Subscription tiers, credits model, refund policy — from `insights-by-omkar`
 
-### 🏗️ Technical program management
-- **[RFCs / design docs](./rfcs/)** — Technical design docs for multi-team architecture decisions
-- **[RAID logs](./raid/)** — Risk, Assumption, Issue, Dependency tracking templates and examples
-- **[Release governance](./release-governance/)** — Go/no-go frameworks, launch checklists, UAT sign-off templates
+- **[PRDs/](./prds)** — Product requirement docs with clear problem framing, user segments, success metrics, and scoping decisions
+  - [Chargeback Defense Infrastructure (PRD)](./prds/chargeback-defense.md)
+
+### 🏗️ Technical design
+
+- **[RFCs/](./rfcs)** — Technical decision docs for multi-team or high-risk architecture choices
+  - [Dual Payment Rails — Stripe + PayPal (RFC)](./rfcs/dual-payment-rails.md)
 
 ### 🚨 Incident & postmortem
-- **[Postmortems](./postmortems/)** — Blameless incident reviews with timelines, contributing factors, corrective actions
-- **[RCA templates](./rca/)** — Root-cause analysis frameworks I've used in production
 
-### 📊 Operating rhythm
-- **[Status rollups](./status-rollups/)** — Weekly/bi-weekly program status templates for exec + stakeholder audiences
-- **[Sprint cadence](./sprint-cadence/)** — Planning, retro, and delivery-metric templates (velocity, cycle time, defect density)
-- **[OKR planning](./okrs/)** — Goal-setting and tracking templates
+- **[Postmortems/](./postmortems)** — Blameless incident reviews with timelines, root causes, and corrective actions
+  - [Support Agent Escalation Reverting to Tier-1 (2026-04-07)](./postmortems/2026-04-07-support-agent-escalation-persistence.md)
 
 ### 🎯 Launch artifacts
-- **[Pre-launch checklist](./launch-checklists/insights-by-omkar.md)** — Real 13-section checklist used to launch a production AI SaaS (env vars, payments, DNS, compliance, monitoring, smoke tests)
-- **[Changelog discipline](./changelogs/)** — Versioned release patterns (`v0.01` → `v2.0.7`) I use for solo and team ships
+
+- **[Launch Checklists/](./launch-checklists)** — Real launch-readiness checklists from shipped programs
+  - [Insights by Omkar — 13-section pre-launch checklist](./launch-checklists/insights-by-omkar.md)
+
+### 📊 Operating rhythm
+
+- **[Status Rollups/](./status-rollups)** — Weekly program status templates for exec + stakeholder audiences
+  - [Weekly Status Template (exec-first format)](./status-rollups/weekly-status-template.md)
+
+### *Coming soon*
+
+More artifacts landing as I redact and publish them: pricing & packaging playbooks, RAID log templates, go/no-go frameworks, OKR planning, sprint-cadence templates, changelog discipline guides.
 
 ---
 
@@ -69,5 +76,5 @@ Everything here is either redacted from real programs I've run or built as templ
 ---
 
 <p align="center">
-  <b>Hiring?</b> <a href="mailto:Jaliparthiomkar03@gmail.com">Jaliparthiomkar03@gmail.com</a> · <a href="https://github.com/omkarjaliparthi">github.com/omkarjaliparthi</a>
+  <b>Hiring?</b> <a href="mailto:Jaliparthiomkar03@gmail.com">Jaliparthiomkar03@gmail.com</a> · <a href="https://github.com/omkarjaliparthi">GitHub</a> · <a href="https://www.linkedin.com/in/jaliparthiomkar">LinkedIn</a>
 </p>
