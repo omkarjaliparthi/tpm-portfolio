@@ -1,17 +1,17 @@
-# RFC — Dual Payment Rails (Stripe + PayPal)
+# RFC · Dual Payment Rails (Stripe + PayPal)
 
-**Status:** Accepted & Shipped (v2.0, 2026-03-25)
-**Author:** Omkar Jaliparthi
-**Program:** Insights by Omkar
+**Status** · Accepted & Shipped · v2.0 · 2026-03-25
+**Author** · Omkar Jaliparthi
+**Program** · Insights by Omkar
 
 ---
 
 ## Context
 
-At v1.2 (2026-03-10), Insights by Omkar had Stripe live for subscriptions + credit packs. Ahead of public launch, we needed to decide whether to add a second payment rail.
+At v1.2 (2026-03-10), Stripe was live for subscriptions + credit packs. Pre-launch decision: add a second payment rail?
 
 Two revenue paths:
-- **Subscriptions** — 4 tiers (Lucky Pro Monthly/Annual, Lucky Max Monthly/Annual)
+- **Subscriptions** — 4 tiers (Lucky Pro M/A, Lucky Max M/A)
 - **Credit packs + impulse packages** — pay-per-reading
 
 ## Options
@@ -99,38 +99,32 @@ flowchart TD
 
 ## Rationale
 
-1. **Trust surface.** Consumer wellness attracts skeptical buyers — especially older demographics who have PayPal accounts but won't enter card details on a new site.
-
-2. **Chargeback surface.** High-emotion purchases have elevated dispute risk. Splitting rails means no single processor's risk model can kill the business.
-
-3. **Unit economics still work.** Fee differential (Stripe ~2.9%+30¢ vs PayPal ~3.49%+49¢) is small relative to the cost of a lost customer at checkout or a paused processor account.
+1. **Trust surface.** Skeptical buyers — especially older demographics — have PayPal accounts and won't enter card details on a new site.
+2. **Processor redundancy.** High-emotion purchases carry elevated dispute risk. One processor can't kill the business.
+3. **Unit economics hold.** Fee differential (Stripe 2.9%+30¢ vs PayPal 3.49%+49¢) is small vs. the cost of a lost customer or frozen account.
 
 ## Implementation
 
-- Add a `PaymentProvider` interface abstracting checkout session creation, webhook verification, subscription state → app state mapping
-- `payments/stripe/*` and `payments/paypal/*` modules implement the interface
-- App-level code never branches on provider — only on normalized state (`active | past_due | canceled | refunded | disputed`)
-- Two separate webhook routes: `/api/billing/webhook` (Stripe), `/api/billing/paypal-webhook` (PayPal)
-- Both webhook routes sign-verify their incoming payloads before processing
+- `PaymentProvider` interface · abstracts checkout session, webhook verification, subscription state mapping
+- `payments/stripe/*` and `payments/paypal/*` implement the interface
+- App code branches on normalized state only: `active | past_due | canceled | refunded | disputed`
+- Two webhook routes: `/api/billing/webhook` (Stripe), `/api/billing/paypal-webhook` (PayPal)
+- Both sign-verify incoming payloads before processing
 
 ## Testing
 
-Before go-live (v2.0):
+Pre-launch (v2.0):
 
-- [x] Full test-mode loop both rails: checkout → webhook → credits delta → refund → webhook → reversal
-- [x] Chargeback simulation: manually open test dispute, confirm `chargeback_cases` row + email log created with timestamped evidence
-- [x] Subscription lifecycle: upgrade, downgrade, cancel in portal → webhook downgrade → UI state
+- [x] Full test loop both rails · checkout → webhook → credits delta → refund → reversal
+- [x] Dispute simulation · test chargeback → `chargeback_cases` row + evidence-stamped email logged
+- [x] Subscription lifecycle · upgrade, downgrade, cancel → webhook → UI state
 
 ## Rollout
 
-- v2.0 — PayPal live behind feature flag `PAYMENTS_PAYPAL_ENABLED`
-- v2.0.1 — flag removed; PayPal button shown at checkout for all users
+- v2.0 — PayPal behind `PAYMENTS_PAYPAL_ENABLED` flag
+- v2.0.1 — flag removed · PayPal button default at checkout
 
-## Follow-ups / lessons
+## Follow-ups
 
-- **Retrospective:** should have built the `PaymentProvider` abstraction at v1.0 even with only Stripe implemented. Retrofitting was ~1.5 days of unnecessary refactor.
-- **Next:** instrument per-rail conversion rate at checkout to learn which rail converts better for which audience.
-
----
-
-*RFC format: I use a compact variant of the Ovoid / Rust RFC style — Context → Options → Decision → Rationale → Implementation → Testing → Rollout. Lives alongside code in a `/rfcs` folder.*
+- Build `PaymentProvider` abstraction at v1.0 next time. Retrofitting cost ~1.5 days.
+- Instrument per-rail conversion at checkout to learn which rail converts better for which audience.

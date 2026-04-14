@@ -1,8 +1,8 @@
-# Pre-Launch Checklist — Insights by Omkar
+# Pre-Launch Checklist · Insights by Omkar
 
-**Context:** Launch readiness checklist used before flipping `insightsbyomkar.com` from staging to production (v1.4.1 → v2.0). Reproduced here with environment-specific values redacted; structure preserved.
+**Context** — used before flipping `insightsbyomkar.com` from staging to production (v1.4.1 → v2.0). Environment-specific values redacted; structure preserved.
 
-This is a **real artifact** from a shipped program, not a template. It demonstrates the scope of things a TPM needs to verify before go-live on a production consumer SaaS with payments, AI, and compliance surfaces.
+A real artifact from a shipped program, not a template. Scope: everything a TPM verifies before go-live on a consumer SaaS with payments, AI, and compliance surfaces.
 
 ---
 
@@ -145,8 +145,8 @@ Verify platform has each cron enabled and signed with `CRON_SECRET`:
 
 ## How to use this
 
-**If you're a TPM shipping a new product:** start with this structure, tune section ordering by your stack.
+**Shipping a product** — start with this structure, tune by your stack.
 
-**If you're hiring one:** use it to gauge whether a candidate has *actually* shipped production software or only described the process.
+**Hiring a TPM** — gauge whether a candidate has actually shipped production software or only described the process.
 
-**Redaction note:** environment-specific values, internal URLs, Slack channels, and on-call rotations are removed. Structure and item list are authentic.
+*Redactions: environment-specific values, internal URLs, Slack channels, on-call rotations. Structure and item list are authentic.*
