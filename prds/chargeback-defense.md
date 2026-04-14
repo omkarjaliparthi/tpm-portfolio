@@ -47,18 +47,18 @@ Without proactive defense, every dispute goes to the bank with **no merchant evi
 
 ```mermaid
 flowchart LR
-    subgraph AtPurchase["🛒 Purchase"]
+    subgraph Purchase
         P1[User views pricing] --> P2[Policy rendered inline]
         P2 --> P3[Click Pay]
         P3 --> P4[(payment_consents)]
     end
 
-    subgraph AtReceipt["📧 Receipt"]
-        R1[Webhook fires] --> R2[Auto-inject policy row +<br/>timestamp + support callout]
+    subgraph Receipt
+        R1[Webhook fires] --> R2[Auto-inject policy row<br>timestamp + support callout]
         R2 --> R3[(email_log HTML snapshot)]
     end
 
-    subgraph OnDispute["⚖️ Dispute"]
+    subgraph Dispute
         D1[Dispute webhook] --> D2[(chargeback_cases)]
         D2 --> D3[Bundle evidence]
         D3 --> D4[Submit in 7 days]
@@ -68,9 +68,9 @@ flowchart LR
     P4 -.evidence.-> D3
     R3 -.evidence.-> D3
 
-    style P4 fill:#6E56CF20,color:#F5F0E6
-    style R3 fill:#C8A96920,color:#F5F0E6
-    style D2 fill:#FF444420,color:#F5F0E6
+    style P4 fill:#C4B8F0,color:#000
+    style R3 fill:#F5D789,color:#000
+    style D2 fill:#FF8888,color:#000
 ```
 
 ### 6.1 Data model

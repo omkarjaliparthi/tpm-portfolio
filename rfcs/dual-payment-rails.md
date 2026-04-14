@@ -79,18 +79,18 @@ Two revenue paths:
 
 ```mermaid
 flowchart TD
-    Start([Payments stack decision]) --> Q1{Need global tax<br/>+ compliance at v1?}
-    Q1 -- Yes --> MoR["Merchant of Record<br/>(Paddle / Lemon Squeezy)"]
-    Q1 -- No --> Q2{Single processor<br/>risk acceptable?<br/>account hold = 0 revenue}
-    Q2 -- Yes --> Q3{Target audience<br/>skews younger / global?}
-    Q2 -- No --> Dual["✅ DUAL RAILS<br/>Stripe + PayPal"]
-    Q3 -- Yes --> StripeOnly["Stripe only"]
-    Q3 -- No --> PayPalPref["PayPal preferred<br/>(older / first-time buyers)"]
+    Start([Payments stack decision]) --> Q1{Need global tax<br>handling at v1?}
+    Q1 -- Yes --> MoR[Merchant of Record<br>Paddle or Lemon Squeezy]
+    Q1 -- No --> Q2{Single processor<br>risk acceptable?}
+    Q2 -- Yes --> Q3{Audience skews<br>younger or global?}
+    Q2 -- No --> Dual[DUAL RAILS<br>Stripe + PayPal]
+    Q3 -- Yes --> StripeOnly[Stripe only]
+    Q3 -- No --> PayPalPref[PayPal preferred]
     PayPalPref --> Dual
 
-    style Dual fill:#3FCF8E40,stroke:#3FCF8E,stroke-width:3px,color:#F5F0E6
-    style MoR fill:#FF444420,stroke:#FF4444,color:#F5F0E6
-    style StripeOnly fill:#C8A96920,stroke:#C8A969,color:#F5F0E6
+    style Dual fill:#3FCF8E,stroke:#1F8F5F,stroke-width:3px,color:#000
+    style MoR fill:#FF8888,stroke:#CC4444,color:#000
+    style StripeOnly fill:#F5D789,stroke:#8F7744,color:#000
 ```
 
 ## Decision
