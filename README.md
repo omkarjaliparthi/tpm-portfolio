@@ -27,11 +27,13 @@ Everything here is either redacted from real programs or a template I use today.
 
 - **[PRDs/](./prds)** — problem framing, user segments, success metrics, scoping
   - [Chargeback Defense Infrastructure](./prds/chargeback-defense.md)
+  - [Insights Astrology API · Public Launch](./prds/astrology-api-launch.md)
 
 ### 🏗️ Technical design
 
 - **[RFCs/](./rfcs)** — decision docs for multi-team or high-risk architecture
   - [Dual Payment Rails · Stripe + PayPal](./rfcs/dual-payment-rails.md)
+  - [Home-Grown Ephemeris Engine · Build vs Buy](./rfcs/home-grown-ephemeris-engine.md)
 
 ### 🚨 Incident & postmortem
 
@@ -59,6 +61,7 @@ Pricing & packaging playbooks · RAID log templates · go/no-go frameworks · OK
 | Program | Context | Role |
 |---|---|---|
 | **Insights by Omkar** | Production AI SaaS, solo-shipped in 6 weeks — dual payments, multi-tier support, compliance | Founder / Product / Program / Engineering |
+| **Insights Astrology API** | Commercial astronomy API — 43 endpoints, first-principles VSOP87D + ELP2000 engine, TS/Python/Go SDKs | Founder / Product / Architecture |
 | **Finest Minds portfolio** | $1.2M+, 5 cross-functional teams, 92% on-time delivery | Project Manager (Agile/Scrum) |
 | **MediLink** | Healthcare records platform, 10-person team, 6 Agile sprints | Project Manager |
 | **Shivshanti Ops** | Franchise operations + incident response, 58% faster MTTR | Business Analyst |
