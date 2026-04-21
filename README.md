@@ -47,12 +47,35 @@ Everything here is either redacted from real programs or a template I use today.
 
 ### 📊 Operating rhythm
 
-- **[Status Rollups/](./status-rollups)** — weekly program status templates
+- **[Status Rollups/](./status-rollups)** — weekly program status · templates and real redacted rollups
   - [Weekly Status · exec-first format](./status-rollups/weekly-status-template.md)
+  - [Weekly Status · redacted sample](./status-rollups/weekly-status-sample.md)
 
-### *Coming soon*
+### 🧭 Decision records
 
-Pricing & packaging playbooks · RAID log templates · go/no-go frameworks · OKR planning · sprint cadence · changelog discipline.
+- **[ADRs/](./adrs)** — short, numbered architecture decisions
+  - [0001 · Supabase over self-hosted Postgres](./adrs/0001-supabase-over-self-hosted-postgres.md)
+  - [0002 · TypeScript over Python for the API layer](./adrs/0002-typescript-over-python-api-layer.md)
+  - [0003 · Monorepo split · Netra extraction](./adrs/0003-monorepo-split-netra-extraction.md)
+  - [0004 · Release cadence philosophy](./adrs/0004-release-cadence-philosophy.md)
+  - [0005 · Pricing tier psychology](./adrs/0005-pricing-tier-psychology.md)
+
+### 🛠️ Runbooks
+
+- **[Runbooks/](./runbooks)** — on-call triage and recovery procedures
+  - [Stripe webhook triage](./runbooks/stripe-webhook-triage.md)
+  - [Supabase migration rollback](./runbooks/supabase-migration-rollback.md)
+
+### 📐 Strategy & measurement
+
+- **[Metrics methodology](./methodology.md)** — how headline numbers are defined and counted
+- **[Portfolio strategy](./portfolio-strategy.md)** — how the five products relate and why this order
+- **[Pricing & packaging reasoning](./pricing-and-packaging.md)** — framework, not tier numbers
+
+### 📚 Case studies
+
+- **[Case studies/](./case-studies)** — program retrospectives
+  - [Finest Minds · $1.2M · 5 teams · 92% on-time · anonymized](./case-studies/finest-minds-program-retrospective.md)
 
 ---
 

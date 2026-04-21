@@ -5,6 +5,7 @@ Weekly program status report templates.
 ## Contents
 
 - **[weekly-status-template.md](./weekly-status-template.md)** — Exec-first weekly status template with TL;DR, health matrix, metrics, RAID excerpt, decisions-needed section.
+- **[weekly-status-sample.md](./weekly-status-sample.md)** — Redacted sample from an actual week · shows how the template is filled when the week is normal (not a crisis).
 
 ---
 
