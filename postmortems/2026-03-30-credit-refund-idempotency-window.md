@@ -22,7 +22,7 @@ A refund path that credited the user back for a failed AI generation could, unde
 
 | Time | Event |
 |---|---|
-| — | Self-audit of refund paths triggered by a general "re-read the ledger code" review |
+| Day 0 | Self-audit of refund paths triggered by a general "re-read the ledger code" review |
 | Day 1 · 14:20 | Race identified by reading the code; reproduced in staging with a scripted retry collision |
 | Day 1 · 15:40 | Fix written — lift idempotency key from the *request* to the *failed generation id* |
 | Day 1 · 16:05 | Fix deployed to staging |

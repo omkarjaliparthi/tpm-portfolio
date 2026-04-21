@@ -33,8 +33,8 @@
 
 **What the number means**
 
-- Scale of *decisions* I was making — budget conversations, vendor selections, staffing trade-offs — was sized against programs summing to ≥ $1.2M in active contract value
-- Does not mean I personally signed contracts or had P&L responsibility
+- The programs I ran as Project Manager summed to ≥ $1.2M in active contract value at peak concurrency
+- My accountability covered delivery across those programs: budget conversations, vendor selections, staffing trade-offs, escalations
 
 **What it does not mean**
 

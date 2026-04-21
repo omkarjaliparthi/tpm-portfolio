@@ -57,8 +57,3 @@ Revisit if any hold:
 - A required computation is >5× faster in a native language and is on a customer hot path
 - Cold start times regress past the SLA after dependency growth
 - The team grows past one person and a second language makes ownership boundaries cleaner
-
-## Related
-
-- [ADR 0003 · Monorepo split · Netra extraction](./0003-monorepo-split-netra-extraction.md)
-- [RFC · Home-Grown Ephemeris Engine · Build vs Buy](../rfcs/home-grown-ephemeris-engine.md)

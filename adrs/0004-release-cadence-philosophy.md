@@ -8,7 +8,7 @@
 
 ## Context
 
-The portfolio ships often — sometimes many releases in a day during an iteration burst. That pattern is either a strength signal (fast feedback, small changes, low risk per release) or an anti-pattern (tag spam, missing test discipline). It matters which one is true, and the answer needs to be written down so decisions stay consistent.
+The portfolio ships often — sometimes many releases in a day during an iteration burst. That pattern is either a strength signal (fast feedback, small changes, low risk per release) or an anti-pattern (tag spam, missing test discipline). This ADR records which we're choosing and why.
 
 ## Options
 
@@ -44,14 +44,9 @@ The portfolio ships often — sometimes many releases in a day during an iterati
 
 ## Consequences
 
-**Accepted:**
-- Someone skimming the release page may see 60 entries in a day and assume chaos
-- Automated release tooling is non-negotiable — manual cuts don't survive this cadence
+Automated release tooling becomes non-negotiable; manual cuts don't survive this cadence. Someone skimming the release page may see 60 entries in a day and assume chaos — that's a real perception cost that has to be managed with changelog hygiene, not by slowing down.
 
-**Won:**
-- Smallest possible rollback surface per incident
-- Fixes reach users in minutes, not days
-- Semver discipline stays honest because patch and minor are genuinely different things
+In exchange: the smallest possible rollback surface per incident, fixes reach users in minutes rather than days, and semver discipline stays honest because patch and minor are genuinely different things under this scheme.
 
 ## Counter-signals · when to slow down
 

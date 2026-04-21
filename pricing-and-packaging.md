@@ -100,7 +100,3 @@ Not real, not a specific product — a thought exercise for readers.
 8. **Names** · buyer-persona names. No metal colors.
 
 The *numbers* come last in this flow, and they get revisited as usage data arrives.
-
----
-
-*Related reading · [ADR 0005 · Pricing tier psychology](./adrs/0005-pricing-tier-psychology.md) · [PRD · Astrology API launch](./prds/astrology-api-launch.md)*

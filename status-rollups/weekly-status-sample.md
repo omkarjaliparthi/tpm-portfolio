@@ -65,11 +65,3 @@
 
 - No active hiring. No external dependencies blocked on third parties.
 - Merge freeze none declared; cadence normal.
-
----
-
-## What I learned writing this one
-
-- **"Trend" column pays for itself weekly.** A row that's been yellow for three weeks tells a different story from one that went yellow today. Without the trend arrow, both look the same.
-- **"Ask" at the top forces honesty.** Writing *"no ask"* every week is an honest signal — so is admitting I need a decision I've been dodging.
-- **Absolutes without targets are decoration.** The metrics table only earns its space where a target exists; otherwise it says `N/A` and I own the debt of defining one.

@@ -75,7 +75,7 @@ Everything here is either redacted from real programs or a template I use today.
 ### 📚 Case studies
 
 - **[Case studies/](./case-studies)** — program retrospectives
-  - [Finest Minds · $1.2M · 5 teams · 92% on-time · anonymized](./case-studies/finest-minds-program-retrospective.md)
+  - [Finest Minds · 5-team · $1.2M program retrospective](./case-studies/finest-minds-program-retrospective.md)
 
 ---
 

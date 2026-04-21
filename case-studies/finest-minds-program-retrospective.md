@@ -19,7 +19,7 @@ The work was not heroic. It was repetitive in shape — five teams, each on a tw
 ## What I inherited · month 0–3
 
 - **Sprint cadences were individually healthy, portfolio-level cadence was not.** Five teams, five planning rhythms, five status formats, five definitions of "done." Client-side stakeholders got different-looking reports from different teams on different weeks.
-- **Predictability was the weakest dimension.** Teams shipped, but commitments slipped inside the cycle. Slip rates of 25–30% were common. Clients weren't angry — they'd adjusted expectations — but the team was burning re-plan overhead.
+- **Predictability was the weakest dimension.** Teams shipped, but commitments slipped inside the cycle often enough that clients had adjusted their expectations downward, and the team was burning re-plan overhead each sprint.
 - **RAID logs were end-of-sprint rituals.** Risks surfaced during review, not mid-sprint. By the time they showed up, mitigation options had narrowed.
 - **Postmortems were whispered, not written.** Blame culture wasn't extreme, but there was no artifact-level discipline around incidents.
 
@@ -86,11 +86,9 @@ Teams estimate in their own style. What changed was the *signal loop* — showin
 - **Defect severity taxonomy earlier.** We tracked defects but the severity labels drifted per team. A consistent taxonomy would have made the 30% improvement number visible sooner — and therefore actionable sooner.
 - **Client-visible health dashboards.** Weekly rollups were pull-based by the client. An always-on health view would have removed the "why haven't I heard anything" question permanently. I prototyped this near the end but didn't operationalize it.
 
-## What it's worth
+## What transferred
 
-Six years later, the specific clients and features don't matter; what transferred is mechanical. Program delivery is not a creative craft — it's a *replication* craft. Your job as a program lead is to build the same operating rhythm across every team and then let variance come down over time. Every improvement in this retrospective was upstream of something specific: a meeting that moved, a template that unified, a number that got measured.
-
-The numbers in the headline are the outcome. The mechanisms are the lesson.
+Six years later, the specific clients and features don't matter; what transferred is mechanical. Every improvement in this retrospective was upstream of something specific — a meeting that moved, a template that unified, a number that got measured.
 
 ---
 

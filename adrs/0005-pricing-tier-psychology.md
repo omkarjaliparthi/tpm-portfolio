@@ -50,25 +50,6 @@ Developer-facing APIs have a well-trodden pricing grammar: free tier for learnin
 
 ## Consequences
 
-**Accepted:**
-- Usage-based pricing deferred; some high-volume customers are either over-paying or over-quota
-- Metered overages delayed; an occasional customer churns at the quota edge instead of paying more
-- Three-tier page requires clearer feature matrix than a one-paid-tier page would
+Deferring usage-based pricing means some high-volume customers are either over-paying or over-quota, and the occasional customer churns at the quota edge rather than upgrading. A three-tier page also requires a clearer feature matrix than a single-paid-tier page would. Worth it: buyers self-select in under thirty seconds, revenue is forecastable from subscriptions rather than usage distribution, and tier boundaries give product a natural axis to rank feature requests — which tier funds this?
 
-**Won:**
-- Buyers self-select in under thirty seconds on the pricing page
-- Revenue is forecastable from subscriptions, not usage distribution
-- Tier boundaries give product a natural axis to rank feature requests (which tier funds this?)
-
-## Exit criteria
-
-Revisit if any hold:
-
-- ≥15% of paid customers churn at the quota ceiling
-- Free tier conversion rate drops below target for two consecutive quarters
-- Enterprise deals require custom terms that the page can't express
-
-## Related
-
-- [Pricing & packaging reasoning](../pricing-and-packaging.md)
-- [PRD · Astrology API · Public Launch](../prds/astrology-api-launch.md)
+Revisit if ≥15% of paid customers churn at the quota ceiling, if free-tier conversion drops below target for two consecutive quarters, or if enterprise deals require custom terms the page can't express.
