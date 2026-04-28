@@ -104,8 +104,8 @@ Response headers on every call:
 
 | SDK | Runtime | Size | Registry | Notes |
 |---|---|---|---|---|
-| TypeScript | Node 18+, Bun, Deno, Edge | ~150 LOC | npm: `insightsbyomkar` | Generic `fetchImpl` option for serverless runtimes |
-| Python | 3.9+ | ~190 LOC | PyPI: `insightsbyomkar` | stdlib-only via `urllib.request` |
+| TypeScript | Node 18+, Bun, Deno, Edge | ~150 LOC | npm: `kriya-astrology` | Generic `fetchImpl` option for serverless runtimes |
+| Python | 3.9+ | ~190 LOC | PyPI: `kriya-astrology` | stdlib-only via `urllib.request` |
 | Go | 1.21+ | ~250 LOC | `github.com/omkarjaliparthi/kriya-go` | `net/http` only |
 
 All three MIT-licensed. Server proprietary.
