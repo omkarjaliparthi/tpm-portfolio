@@ -1,9 +1,11 @@
-# PRD · Insights Astrology API — Public Launch
+# PRD · Kriya — Insights Astrology API · Public v1 Launch
 
-**Status** · Shipped · v1.0 · 2026-04-15
+**Status** · Shipped v1.0 · 2026-04-15 · *now at v9.x · 109+ endpoints (last verified 2026-04-27)*
 **Owner** · Omkar Jaliparthi · Founder / Product / Architecture
-**Product** · Insights Astrology API · tuffys-ai-astrology.vercel.app
+**Product** · Kriya — Insights Astrology API (formerly *Tuffys*) · [kriya.insightsbyomkar.com](https://kriya.insightsbyomkar.com)
 **Parent business** · Omkar's Holistic Services LLC (DBA Insights by Omkar)
+
+> **This is a historical PRD** — the v1-launch document. It captures the scope and reasoning at the moment of public launch. The product has since grown across nine semver versions; this PRD's success metrics, endpoint list, and risk register reflect the v1 state, not the current state. See the [case-study Outcomes & Lessons doc](https://github.com/omkarjaliparthi/insights-astrology-api-case-study/blob/main/docs/08-outcomes-and-lessons.md#where-it-is-now) for the current snapshot.
 
 ---
 
@@ -164,7 +166,7 @@ README + `/docs` publish accuracy targets with sources. No magical claims.
 
 ## 10. References
 
-- [Main repository](https://github.com/omkarjaliparthi/tuffys-ai-astrology) — engine, API, frontend, embedded case study
+- [Main repository](https://github.com/omkarjaliparthi/tuffys-ai-astrology) — engine, API, frontend (legacy repo name; product now trades as Kriya)
 - [RFC · Home-grown ephemeris engine (build vs buy)](../rfcs/home-grown-ephemeris-engine.md) — technical decision doc for §6.1
-- [Live demo](https://tuffys-ai-astrology.vercel.app) · [Pricing](https://tuffys-ai-astrology.vercel.app/pricing) · [API docs](https://tuffys-ai-astrology.vercel.app/docs/api)
+- [Live API · Kriya](https://kriya.insightsbyomkar.com) · [Pricing](https://kriya.insightsbyomkar.com/pricing) · [API docs](https://kriya.insightsbyomkar.com/docs/api)
 - Meeus, J. *Astronomical Algorithms*, 2nd ed. · Bretagnon & Francou, VSOP87 · Chapront-Touzé & Chapront, ELP2000 · Standish, JPL DE

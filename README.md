@@ -84,7 +84,7 @@ Everything here is either redacted from real programs or a template I use today.
 | Program | Context | Role |
 |---|---|---|
 | **Insights by Omkar** | Production AI SaaS, solo-shipped in 6 weeks — dual payments, multi-tier support, compliance | Founder / Product / Program / Engineering |
-| **Insights Astrology API** | Commercial astronomy API — 43 endpoints, first-principles VSOP87D + ELP2000 engine, TS/Python/Go SDKs | Founder / Product / Architecture |
+| **Kriya — Insights Astrology API** *(formerly Tuffys)* | Commercial astronomy API — 109+ endpoints (43 at v1 launch, grown across nine semver versions), first-principles VSOP87D + ELP/MPP02 + DOPRI8 engine, TS/Python/Go SDKs | Founder / Product / Architecture |
 | **Finest Minds portfolio** | $1.2M+, 5 cross-functional teams, 92% on-time delivery | Project Manager (Agile/Scrum) |
 | **MediLink** | Healthcare records platform, 10-person team, 6 Agile sprints | Project Manager |
 | **Shivshanti Ops** | Franchise operations + incident response, 58% faster MTTR | Business Analyst |

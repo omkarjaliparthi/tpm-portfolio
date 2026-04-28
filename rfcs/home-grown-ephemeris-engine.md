@@ -158,7 +158,7 @@ Scoped ruthlessly to what a solo engineer can ship in one day.
 
 ### Phase 4 — HTTP layer (committed: `733da2e`)
 
-- 43 v1 endpoints under `app/api/v1/...`
+- 43 v1 endpoints at launch under `app/api/v1/...` (now 109+ across nine semver versions)
 - Stateless HS256 JWT auth with embedded per-key quotas
 - Dual-window rate limiter (Upstash + in-process fallback)
 - Strict ISO-8601 parser (rejects naive locals)
